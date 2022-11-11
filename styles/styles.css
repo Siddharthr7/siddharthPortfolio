@@ -80,9 +80,9 @@ section {
 }
 @keyframes appear {
   0% {
-    transform: translateY(-100%) scaleY(0);
+    transform: translateY(-90%) scaleY(0);
   }
-  100% {
+  90% {
     transform: translateY(0) scaleY(1);
   }
 }
@@ -546,7 +546,7 @@ section {
   justify-content: space-between;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
-  margin: 0.3rem 0 !important;
+  margin: 0.4rem 0 !important;
   padding: 0 !important;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon {
