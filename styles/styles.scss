@@ -115,9 +115,35 @@ section {
     }
     .active-btn {
         background-color: var(--color-secondary);
+        
         transition: all .4s ease-in-out;
         i { color: var(--color-white); }
+        
     }
+    .tooltiptext {
+        background-color: #000;
+        color: #FFF;
+        white-space: nowrap;
+        padding: 10px 15px;
+        border-radius: 7px;
+        visibility: hidden;
+        opacity: 0;
+        transition-duration: 0.5sec;
+    }
+    .tooltiptext::before{
+        content: "";
+        position: absolute;
+        transform: translate(-50%);
+        bottom: 50px solid;
+        border-color: #000 #0000 #0000 #0000;
+    }
+    .controls:hover .tooltiptext{
+        top: -130%;
+        visibility: visible;
+        opacity: 1;
+
+    }
+    
 }
 
 .theme-btn {
